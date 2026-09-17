@@ -24,6 +24,21 @@ model change.
 
 TypeScript, Next.js, Postgres, MIT licensed.
 
+[vigil](https://github.com/LudwigJMarx/vigil), a self-hosted signal layer for
+long-cycle B2B sales: a timeline per account, and a score built from the weight
+and the age of what is on it.
+
+A lead score out of a sales tool is a number you cannot argue with, which makes
+it useless to the person deciding whether to write today. vigil returns the
+contributions the total is made of, and names every signal kind it had no rule
+for, so an account that is quiet and a scoring model that understood nothing do
+not produce the same empty list. It sends no message on your behalf and makes no
+request to LinkedIn; capture is a click, and the absence is enforced in CI
+rather than promised in a README.
+
+Go, SQLite, a Chrome extension in TypeScript. One static binary and one file,
+Apache-2.0 licensed.
+
 ### How I work
 
 **Reproduce before diagnosing.** A command or test that shows the failure comes
@@ -42,5 +57,5 @@ one, and what was discarded. That belongs in the commit body.
 
 ### Languages
 
-TypeScript, Python, Rust.
+TypeScript, Python, Go, Rust.
 

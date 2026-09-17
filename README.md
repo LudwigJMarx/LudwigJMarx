@@ -5,6 +5,11 @@ something it did not write itself: an API that changed without telling anyone,
 a file format, a feed that arrives in a shape the documentation does not
 mention.
 
+Much of that comes from finance. I trade on eToro as a Popular Investor and
+build my own tooling for it, which is where most of these seams turn up:
+brokers whose API moves without notice, market data in shapes nobody wrote
+down.
+
 ### Currently building
 
 [Talveo](https://github.com/LudwigJMarx/talveo), an application tracker for job

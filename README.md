@@ -12,6 +12,27 @@ down.
 
 ### Currently building
 
+[factorbase](https://github.com/LudwigJMarx/factorbase), a catalogue of
+stock-screening factors. 180 entries: technical indicators, fundamental ratios,
+chart signals and cross-sectional rankings, each with the formula it is
+defined by and an implementation tested against that formula.
+
+Indicator libraries compute. They rarely say what they computed. Two packages
+will both hand you "RSI(14)" and disagree, because one smoothed with Wilder's
+1/n and the other with a 2/(n+1) exponential average, and neither wrote it
+down. Every such choice here is stated in the entry, next to the formula, and
+the entries also say what a factor does not do: one of them carries the
+arithmetic showing it will not screen out gap risk, which is the thing people
+reach for it to do.
+
+The rule that earned its keep: at least one test per family compares against
+something written outside the package. Four arithmetic defects once survived
+279 self-consistent tests, because every test recomputed them faithfully from
+the same wrong premise. Wilder's published example found all four in an
+afternoon.
+
+Python, pandas, MIT licensed. No data source, and there will not be one.
+
 [Talveo](https://github.com/LudwigJMarx/talveo), an application tracker for job
 seekers, built around a matching score that can be recomputed and contested
 rather than trusted.

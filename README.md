@@ -12,8 +12,28 @@ down.
 
 ### Currently building
 
+[Onestein](https://github.com/LudwigJMarx/Onestein), a messaging protocol stack
+for networks that are slow, intermittent, censored or absent. The same message
+travels over Tor, Bluetooth, a local network or a memory card. No server has to
+exist, and nobody hands out an identifier.
+
+It is the protocol and the library, and it will not become a messenger. The
+library opens no file, no socket and reads no clock. That is not an omission:
+the one thing a library cannot do for a messenger is make a secret disappear.
+Whoever owns the storage owns that, so the state goes out to the caller in
+plain numbers and comes back.
+
+Draft 0, and the README says so at the top rather than in a footnote. There is
+no second implementation, so every conformance test is a conversation with
+itself; the partial answers are foreign oracles for the primitives, property
+tests over the formats, and a generator in another language written from the
+documents. No cryptographer has read it. Nobody uses it.
+
+Rust, eleven crates, hybrid X25519 and ML-KEM-768. Apache-2.0 or MIT for the
+code, CC BY-SA 4.0 for the specification.
+
 [factorbase](https://github.com/LudwigJMarx/factorbase), a catalogue of
-stock-screening factors. 180 entries: technical indicators, fundamental ratios,
+stock-screening factors. 192 entries: technical indicators, fundamental ratios,
 chart signals and cross-sectional rankings, each with the formula it is
 defined by and an implementation tested against that formula.
 
@@ -32,18 +52,6 @@ the same wrong premise. Wilder's published example found all four in an
 afternoon.
 
 Python, pandas, MIT licensed. No data source, and there will not be one.
-
-[Talveo](https://github.com/LudwigJMarx/talveo), an application tracker for job
-seekers, built around a matching score that can be recomputed and contested
-rather than trusted.
-
-Asking a language model "how well does this CV fit, 0 to 100?" gives you a
-number nobody can recompute or challenge. Talveo splits the work. A model reads
-the posting and judges each requirement on its own. A deterministic stage then
-turns those judgements into a score. Same input, same result, including after a
-model change.
-
-TypeScript, Next.js, Postgres, MIT licensed.
 
 [vigil](https://github.com/LudwigJMarx/vigil), a self-hosted signal layer for
 long-cycle B2B sales: a timeline per account, and a score built from the weight

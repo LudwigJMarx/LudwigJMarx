@@ -12,7 +12,7 @@ claims.
 
 Available for open-source contribution work, particularly debugging existing
 codebases and building data integrations.
-[Portfolio](https://www.ludwigjmarx.de) · [Contact](mailto:kontakt@ludwigjmarx.de)
+[Portfolio](https://www.ludwigjmarx.dev) · [Contact](mailto:ludwig@ludwigjmarx.dev)
 
 ## Selected contributions
 
@@ -54,7 +54,7 @@ smoothing and initialization so that a result can be reproduced.
 
 **[portfolio](https://github.com/LudwigJMarx/portfolio)** · TypeScript, Next.js
 
-The source of [ludwigjmarx.de](https://www.ludwigjmarx.de). Every claim on the
+The source of [ludwigjmarx.dev](https://www.ludwigjmarx.dev). Every claim on the
 page is checked against the GitHub API when the page renders, and each one
 shows up as verified, disputed, or unverified with the reason it could not be
 checked. A refused API call prints its reason instead of passing as a zero.

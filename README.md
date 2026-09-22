@@ -27,39 +27,6 @@ Pull requests that other maintainers took into their projects:
 | [ezBookkeeping #678](https://github.com/mayswind/ezbookkeeping/pull/678) | Edit-scope tests built their boundaries outside the time zone they were testing, so they went red depending on where you ran them. | Go |
 | [ifc-lite #4900](https://github.com/LTplus-AG/ifc-lite/pull/4900) | The parser pointed its worker URL at a file the package doesn't ship. Now it points at the one it does. | TypeScript |
 
-## My own projects
-
-The repositories are private. What each one does:
-
-**Onestein** · Rust
-
-A messaging protocol stack and library for networks that are slow, intermittent,
-or simply not there. Protocol logic stays separate from application storage and
-transport. Experimental, and nobody outside has audited it.
-
-**mesura** · Python
-
-A test bench for trading-strategy claims. You hand it a reported number, it
-tells you what the sample behind it can support. Published on PyPI, so
-`pip install mesura` gets you the whole thing. Its browser half, mesura-web,
-redoes the trade-record part in TypeScript, with every figure checked against
-the Python one.
-
-**factorbase** · Python, pandas
-
-A catalogue of stock-screening factors. Each one comes with its formula written
-out, what it needs as input, and a tested reference implementation. Choices like
-smoothing and initialization are documented, which means you can reproduce a
-result instead of guessing how it was meant. `pip install factorbase`.
-
-**portfolio** · TypeScript, Next.js
-
-The source of [ludwigjmarx.dev](https://www.ludwigjmarx.dev). Every claim on the
-page gets checked against the GitHub API while the page renders, and comes back
-as verified, disputed, or unverified with the reason it couldn't be checked. If
-an API call is refused, the page prints why. It doesn't let a failure pass as a
-zero.
-
 ## How I work
 
 A bug fix starts with a failure I can reproduce. Then a regression test that is

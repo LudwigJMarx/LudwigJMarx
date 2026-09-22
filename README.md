@@ -42,9 +42,8 @@ transport. Experimental, and nobody outside has audited it.
 A test bench for trading-strategy claims. You hand it a reported number, it
 tells you what the sample behind it can support. Published on PyPI, so
 `pip install mesura` gets you the whole thing. Its browser half, mesura-web,
-redoes the trade-record part in TypeScript with every figure checked against
-the Python one, and it runs on the portfolio under
-[/demos/track-record](https://www.ludwigjmarx.dev/demos/track-record).
+redoes the trade-record part in TypeScript, with every figure checked against
+the Python one.
 
 **factorbase** · Python, pandas
 

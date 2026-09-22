@@ -22,40 +22,38 @@ Pull requests that other maintainers took into their projects:
 
 | Project | What it fixed | Language |
 | --- | --- | --- |
-| [ifc-lite #4900](https://github.com/LTplus-AG/ifc-lite/pull/4900) | The parser pointed its worker URL at a file the package doesn't ship. Now it points at the one it does. | TypeScript |
+| [bevy_replicon #764](https://github.com/simgine/bevy_replicon/pull/764) | Seven places read a size out of a network message and handed it to a cursor that panics when the message is shorter than the size claims. One truncated packet took the client down. | Rust |
 | [ezBookkeeping #677](https://github.com/mayswind/ezbookkeeping/pull/677) | Monthly schedules counted from the end of the month ignored the template's time zone. | Go |
 | [ezBookkeeping #678](https://github.com/mayswind/ezbookkeeping/pull/678) | Edit-scope tests built their boundaries outside the time zone they were testing, so they went red depending on where you ran them. | Go |
+| [ifc-lite #4900](https://github.com/LTplus-AG/ifc-lite/pull/4900) | The parser pointed its worker URL at a file the package doesn't ship. Now it points at the one it does. | TypeScript |
 
 ## My own projects
 
-**[vigil](https://github.com/LudwigJMarx/vigil)** · Go, SQLite, TypeScript
+The repositories are private. What each one does:
 
-A self-hosted account timeline and scoring tool for B2B sales. It shows what
-each signal contributed to a score, and it says so when a signal can't be
-scored. One binary, one database file.
-
-**[Onestein](https://github.com/LudwigJMarx/Onestein)** · Rust
+**Onestein** · Rust
 
 A messaging protocol stack and library for networks that are slow, intermittent,
 or simply not there. Protocol logic stays separate from application storage and
 transport. Experimental, and nobody outside has audited it.
 
-**[mesura](https://github.com/LudwigJMarx/mesura)** · Python
+**mesura** · Python
 
 A test bench for trading-strategy claims. You hand it a reported number, it
-tells you what the sample behind it can support.
-[mesura-web](https://github.com/LudwigJMarx/mesura-web) does the trade-record
-part in the browser, TypeScript, with every calculation checked against the
-Python one.
+tells you what the sample behind it can support. Published on PyPI, so
+`pip install mesura` gets you the whole thing. Its browser half, mesura-web,
+redoes the trade-record part in TypeScript with every figure checked against
+the Python one, and it runs on the portfolio under
+[/demos/track-record](https://www.ludwigjmarx.dev/demos/track-record).
 
-**[factorbase](https://github.com/LudwigJMarx/factorbase)** · Python, pandas
+**factorbase** · Python, pandas
 
 A catalogue of stock-screening factors. Each one comes with its formula written
 out, what it needs as input, and a tested reference implementation. Choices like
 smoothing and initialization are documented, which means you can reproduce a
-result instead of guessing how it was meant.
+result instead of guessing how it was meant. `pip install factorbase`.
 
-**[portfolio](https://github.com/LudwigJMarx/portfolio)** · TypeScript, Next.js
+**portfolio** · TypeScript, Next.js
 
 The source of [ludwigjmarx.dev](https://www.ludwigjmarx.dev). Every claim on the
 page gets checked against the GitHub API while the page renders, and comes back

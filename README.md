@@ -23,12 +23,14 @@ Maintainers took these into their projects:
 
 | Project | What went wrong | Language |
 | --- | --- | --- |
-| [bevy_replicon #764](https://github.com/simgine/bevy_replicon/pull/764) | Seven places read a size out of a network message and trusted it. One truncated packet took the client down. | Rust |
-| [laya #132](https://github.com/NandhaKishorM/laya/pull/132) | Any line starting with a sign-off word counted as the start of a signature, so everything after it got cut. | Python |
-| [laya #133](https://github.com/NandhaKishorM/laya/pull/133) | The research scripts computed the repo root one level too short and failed on paths that don't exist. | Python |
-| [ezBookkeeping #677](https://github.com/mayswind/ezbookkeeping/pull/677) | Monthly schedules counted from the end of the month ignored the template's time zone. | Go |
-| [ezBookkeeping #678](https://github.com/mayswind/ezbookkeeping/pull/678) | Edit-scope tests went red or green depending on where you ran them. | Go |
-| [ifc-lite #4900](https://github.com/LTplus-AG/ifc-lite/pull/4900) | The parser pointed its worker URL at a file the package doesn't ship. | TypeScript |
+| [laya](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ALudwigJMarx+is%3Amerged) ![stars](https://img.shields.io/github/stars/NandhaKishorM/laya?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | Three fixes. Any line that started with a sign-off word counted as the start of a signature, so everything after it got cut. The research scripts computed the repo root one level too short. One function was defined twice, and the two copies could drift apart without any test noticing. | Python |
+| [ezBookkeeping](https://github.com/mayswind/ezbookkeeping/pulls?q=is%3Apr+author%3ALudwigJMarx+is%3Amerged) ![stars](https://img.shields.io/github/stars/mayswind/ezbookkeeping?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | Two fixes. Monthly schedules counted from the end of the month ignored the template's time zone. Edit-scope tests went red or green depending on where you ran them. | Go |
+| [bevy_replicon](https://github.com/simgine/bevy_replicon/pull/764) ![stars](https://img.shields.io/github/stars/simgine/bevy_replicon?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | Seven places read a size out of a network message and trusted it. One truncated packet took the client down. | Rust |
+| [Mustang](https://github.com/ZUGFeRD/mustangproject/pull/1276) ![stars](https://img.shields.io/github/stars/ZUGFeRD/mustangproject?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | One payment term the importer could not parse stopped the import of the whole e-invoice. | Java |
+| [ifc-lite](https://github.com/LTplus-AG/ifc-lite/pull/4900) ![stars](https://img.shields.io/github/stars/LTplus-AG/ifc-lite?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | The parser pointed its worker URL at a file the package doesn't ship. | TypeScript |
+
+Pull requests to 12 more projects are still open, among them go-ethereum,
+Ollama, Microsoft qlib, Umami and Hyperswitch.
 
 ## How I work
 

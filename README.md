@@ -14,7 +14,7 @@ That's how I got into this, actually. I trade on eToro as a Popular Investor and
 wanted to know what a performance number is worth. Often less than it says. The
 same question turned out to fit other people's code pretty well.
 
-**Go, Rust & Python · Next.js** · open for contract and open-source work
+**Go, Rust & Python · Next.js** · open for open-source work
 [Portfolio](https://www.ludwigjmarx.dev) · [Contact](mailto:ludwig@ludwigjmarx.dev)
 
 ## Merged elsewhere

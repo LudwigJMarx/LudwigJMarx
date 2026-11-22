@@ -5,8 +5,7 @@ I test trading rules against chance, and I build the backend code that runs the 
 Most backtests look better than the strategy behind them. A filter drops data
 without a message. A hedge is counted from before the fill. A data vendor
 changes how it counts volume, and a filter starts to trade the data instead of
-the market. I look for these errors before I trust a number, in my own research
-and in other people's code.
+the market. I look for these errors before I trust a number.
 
 **Quant research · Backend in Python, Go, Rust and R**
 [ludwigjmarx.com](https://ludwigjmarx.com) · [ludwig@ludwigjmarx.com](mailto:ludwig@ludwigjmarx.com)
@@ -30,13 +29,8 @@ the numbers, not me.
 
 ## How I work
 
-In research, I write the test down before I read the data. A second platform
+I write each test down before I read the data. A second platform
 with its own data and execution checks every result trade by trade.
-
-In code, I first make the bug happen on my machine. Then I write a test that is
-red before the fix and green after, and I run both. The diff stays on the
-problem. The pull request gets the commands and the output. It also says why I
-didn't take the obvious route, so you can check the work instead of trusting me.
 
 ## Background
 

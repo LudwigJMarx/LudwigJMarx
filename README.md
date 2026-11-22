@@ -28,18 +28,6 @@ Failed tests stay in the paper.
 I run a public portfolio on eToro as a Popular Investor. The platform measures
 the numbers, not me.
 
-## Open source
-
-Maintainers merged these fixes into their projects:
-
-| Project | What went wrong | Language |
-| --- | --- | --- |
-| [laya](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ALudwigJMarx+is%3Amerged) ![stars](https://img.shields.io/github/stars/NandhaKishorM/laya?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | Three fixes. Any line that started with a sign-off word counted as the start of a signature, so everything after it got cut. The research scripts computed the repo root one level too short. One function was defined twice, and the two copies could drift apart without any test noticing. | Python |
-| [ezBookkeeping](https://github.com/mayswind/ezbookkeeping/pulls?q=is%3Apr+author%3ALudwigJMarx+is%3Amerged) ![stars](https://img.shields.io/github/stars/mayswind/ezbookkeeping?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | Two fixes. Monthly schedules counted from the end of the month ignored the template's time zone. Edit-scope tests went red or green depending on where you ran them. | Go |
-| [bevy_replicon](https://github.com/simgine/bevy_replicon/pull/764) ![stars](https://img.shields.io/github/stars/simgine/bevy_replicon?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | Seven places read a size out of a network message and trusted it. One truncated packet took the client down. | Rust |
-| [Mustang](https://github.com/ZUGFeRD/mustangproject/pull/1276) ![stars](https://img.shields.io/github/stars/ZUGFeRD/mustangproject?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | One payment term the importer could not parse stopped the import of the whole e-invoice. | Java |
-| [ifc-lite](https://github.com/LTplus-AG/ifc-lite/pull/4900) ![stars](https://img.shields.io/github/stars/LTplus-AG/ifc-lite?style=flat-square&label=%E2%98%85&labelColor=21262d&color=e3b341) | The parser pointed its worker URL at a file the package doesn't ship. | TypeScript |
-
 ## How I work
 
 In research, I write the test down before I read the data. A second platform
